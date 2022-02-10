@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Viga&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-image: url(img/walpaper.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 30%;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5), -2px -2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.container h1 {
+  color: white;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.container .input {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.container .tombol, .container .jenis{
+  display: flex;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  font-size: 15px;
+  border-radius: 20px;
+  padding: 20px;
+  margin-top: 20px;
+  box-shadow: 1px -1px 1px rgba(255, 255, 255, 0.3),
+    -1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.container .input input{
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 20px;
+  height: 100px;
+  padding: 20px;
+  text-align: right;
+  outline: none;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  letter-spacing: 1px;
+  width: 100%;
+  box-shadow: 1px -1px 1px rgba(255, 255, 255, 0.3),
+    -1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.container .jenis{
+  display: flex;
+  font-size: 20px;
+  color: white;
+}
+
+.container .input input:nth-child(1){
+  margin-bottom: 20px;
+}
+
+.container .input input::-webkit-input-placeholder {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.container .tombol button {
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid white;
+  color: white;
+  border-radius: 20px;
+  width: 30%;
+  padding: 7px 10px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.container  button:nth-child(1), .container .jenis p:nth-child(1) {
+  margin-right: 20px;
+}
+
+.container  button:hover {
+  transform: scale(1.1);
+}
+
+.container .hasil {
+  color: white;
+  letter-spacing: 2px;
+  font-weight: normal;
+  font-size: 15px;
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  width: 100%;
+  padding: 20px;
+  box-shadow: 1px -1px 1px rgba(255, 255, 255, 0.3),
+    -1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.container .hasil .q1,
+.container .hasil .q2,
+.container .hasil .q3,
+.container .hasil .jq {
+  margin-bottom: 10px;
+}
+
+@media all and (max-width: 1000px) {
+  .container {
+    width: 50%;
+  }
+}
+
+@media all and (max-width: 670px) {
+  .container {
+    width: 80%;
+  }
+
+  .container h1 {
+    font-size: 25px;
+  }
+
+  .container .input input::-webkit-input-placeholder {
+    font-size: 15px;
+  }
+
+  .container .input button {
+    padding: 7px 9px;
+    width: 40%;
+    font-size: 12px;
+  }
+
+  .container .hasil {
+    font-size: 12px;
+  }
+}
